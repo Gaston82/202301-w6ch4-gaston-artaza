@@ -1,3 +1,1 @@
-const a = "llalala";
-
-console.log(a);
+import "./environment.js";
