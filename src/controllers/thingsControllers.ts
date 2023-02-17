@@ -13,7 +13,8 @@ export const getThingById = (req: Request, res: Response) => {
 
 export const deleteThingById = (req: Request, res: Response) => {
   const { id } = req.params;
-  const position = things.findIndex((thing) => thing.id === +id);
-  things.splice(position, 1);
+
+  things.filter((thing) => thing.id !== +id);
+
   res.status(200).json({ things });
 };

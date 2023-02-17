@@ -1,6 +1,7 @@
 import { type ThingStructure } from "../types";
 
-const things: ThingStructure[] = [
+// eslint-disable-next-line prefer-const
+let things: ThingStructure[] = [
   {
     id: 1,
     name: "Cook",
